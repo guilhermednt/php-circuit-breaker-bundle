@@ -5,9 +5,9 @@
 
     <parameters>
         <!-- how many times can each service fail before it is marked as unavailable -->
-        <parameter key="ejsmont_circuit_breaker.threshold">30</parameter>
+        <!--<parameter key="ejsmont_circuit_breaker.threshold">30</parameter>-->
         <!-- how many seconds should circuit breaker wait before allowing a single client through -->
-        <parameter key="ejsmont_circuit_breaker.retry_timeout">60</parameter>
+        <!--<parameter key="ejsmont_circuit_breaker.retry_timeout">60</parameter>-->
 
         <!-- ========== You should not have to override parameters below this line ========== -->
             
