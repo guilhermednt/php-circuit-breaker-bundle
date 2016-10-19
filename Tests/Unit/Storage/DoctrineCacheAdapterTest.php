@@ -5,9 +5,11 @@ namespace Ejsmont\CircuitBreakerBundle\Tests\Unit\Storage;
 use Ejsmont\CircuitBreakerBundle\Storage\DoctrineCacheAdapter;
 use Doctrine\Common\Cache\ArrayCache;
 
-class DoctrineCacheAdapterTest extends \PHPUnit_Framework_TestCase {
+class DoctrineCacheAdapterTest extends \PHPUnit_Framework_TestCase
+{
 
-    public function testArrayForce() {
+    public function testArrayForce()
+    {
         $cache = new ArrayCache();
         $adapter = new DoctrineCacheAdapter($cache);
 
@@ -17,7 +19,8 @@ class DoctrineCacheAdapterTest extends \PHPUnit_Framework_TestCase {
         $this->assertEquals(123, $res);
     }
 
-    public function testArrayNonForce() {
+    public function testArrayNonForce()
+    {
         $cache = new ArrayCache();
         $adapter = new DoctrineCacheAdapter($cache);
 
